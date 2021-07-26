@@ -1,0 +1,27 @@
+<p>Let us know how we can improve our site</p>
+<form>
+   <p>
+    <label for="name">Name </label>
+    <input type="text" id="name" name="name">
+  </p>
+  <p>
+    <label for="email">Email </label>
+    <input type="text" id="email" name="email">
+  </p>
+</form>
+<h5>which option best describe your current role</h5>
+<p-multiSelect [options]="roles" [(ngModel)]="selectedRoles" optionLabel="name" ></p-multiSelect>
+
+
+<p>
+    <label for="recommendation">how likely is that you would recommend our site to a friend </label>&nbsp;
+    <input type="radio" value="definitly" id="recommend" name="recommended"> definitly
+    <input type="radio" value="maybe" id="recommend" name="recommended"> maybe
+    <input type="radio" value="not-sure" id="recommend" name="recommended"> not sure
+  </p>
+
+<label for="groupname">Things that should be improved in the future </label><br><br>
+<p-checkbox name="groupname" value="val1" label="Front-end projects" [(ngModel)]="selectedValues"></p-checkbox> <br>
+<p-checkbox name="groupname" value="val2" label="back-end projects" [(ngModel)]="selectedValues"></p-checkbox><br>
+<p-checkbox name="groupname" value="val3" label="Data-visualisation" [(ngModel)]="selectedValues"></p-checkbox>
+
